@@ -1,5 +1,6 @@
 V0.1
--Add code for reading the TCRT5000 sensor and writing
+-Add code for reading the TCRT5000 sensors and writing
  the sensorstate in serial monitor.
 
 -Add if-statements when the sensor detects line.
+
