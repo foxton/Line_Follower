@@ -1,3 +1,8 @@
 V 0.1
 Added basic code for reading the sensors and writing the
 sensor states to serial monitor.
+
+V 0.15
+Code has been adapted to the ATtiny84
+Sensors detect black line and activates the motors accordingly.
+
