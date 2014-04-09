@@ -2,5 +2,10 @@ V0.1
 -Add code for reading the TCRT5000 sensors and writing
  the sensorstate in serial monitor.
 
+ V0.15
 -Add if-statements when the sensor detects line.
+-Add code for motor pins
+-Adapt the code to match the ATtiny84 pins
 
+V0.20
+-Add code for sharp turns (>90 degrees)
