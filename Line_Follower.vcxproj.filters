@@ -26,6 +26,9 @@
     <Text Include="Changelog.txt">
       <Filter>Source Files</Filter>
     </Text>
+    <Text Include="readme.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <None Include="Line_Follower.ino" />
