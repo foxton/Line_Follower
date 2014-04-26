@@ -5,7 +5,6 @@
     double sensorStateLeft = 0;
     double sensorStateCenter = 0;
     double sensorStateRight = 0;
-    int ledPin = 7;  
 
     int motor_left[] = {0, 1};
     int motor_right[] = {2, 3};
@@ -15,13 +14,10 @@
     pinMode(sensorLeft,INPUT);
     pinMode(sensorCenter,INPUT);
     pinMode(sensorRight,INPUT);
-   
-
 
     }
     void loop()
-    {
-	
+    {	
    sensorStateLeft = analogReadAverage(sensorLeft, 10);
    sensorStateCenter = analogReadAverage(sensorCenter, 10); 
    sensorStateRight = analogReadAverage(sensorRight, 10);
@@ -41,7 +37,6 @@
    {
      turn_right();
    }
-
     }
     double analogReadAverage(double SensorPosition, int samples)
     {
@@ -50,12 +45,12 @@
     {
     value += analogRead(SensorPosition);
     }
-    analogWrite(ledPin, value/samples);
     return value / samples;
     
     }
  /*   
-void motor_stop(){
+void motor_stop()
+{
 digitalWrite(motor_left[0], LOW);
 digitalWrite(motor_left[1], LOW);
 
@@ -65,7 +60,8 @@ delay(25);
 }
 */
 /*
-void drive_backward(){
+void drive_backward()
+{
 digitalWrite(motor_left[0], LOW);
 digitalWrite(motor_left[1], HIGH);
 
@@ -74,7 +70,8 @@ digitalWrite(motor_right[1], HIGH);
 }
 */
 
-void drive_forward(){
+void drive_forward()
+{
 digitalWrite(motor_left[0], HIGH);
 digitalWrite(motor_left[1], LOW);
 
@@ -82,7 +79,8 @@ digitalWrite(motor_right[0], HIGH);
 digitalWrite(motor_right[1], LOW); 
 }
 
-void turn_right(){
+void turn_right()
+{
 digitalWrite(motor_left[0], LOW);
 digitalWrite(motor_left[1], LOW);
 
@@ -90,10 +88,13 @@ digitalWrite(motor_right[0], HIGH);
 digitalWrite(motor_right[1], LOW);
 }
 
-void turn_left(){
+void turn_left()
+{
 digitalWrite(motor_left[0], HIGH);
 digitalWrite(motor_left[1], LOW);
 
 digitalWrite(motor_right[0], LOW);
 digitalWrite(motor_right[1], LOW);
 }
+
+
